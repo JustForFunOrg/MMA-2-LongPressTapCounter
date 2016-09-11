@@ -30,7 +30,7 @@
                             </label>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap or Hold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk0-7n-TID">
                                 <rect key="frame" x="78" y="466" width="219" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.46666666666666667" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.040667451444219016" green="0.51986563187154822" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
@@ -40,12 +40,13 @@
                                     <constraint firstAttribute="height" constant="32" id="CSA-Mw-96e"/>
                                     <constraint firstAttribute="width" constant="125" id="Cdh-Pe-Lcq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM1-tI-cmh">
-                                <rect key="frame" x="24" y="29" width="39" height="30"/>
+                                <rect key="frame" x="8" y="30" width="41" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="resetBarButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4F-nZ-2Pe"/>
@@ -56,8 +57,8 @@
                         <constraints>
                             <constraint firstItem="Kka-v5-san" firstAttribute="centerX" secondItem="Xw0-nU-LvI" secondAttribute="centerX" id="0LD-BN-DRj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bk0-7n-TID" secondAttribute="bottom" constant="171" id="4ov-qn-x26"/>
-                            <constraint firstItem="Xw0-nU-LvI" firstAttribute="centerY" secondItem="IM1-tI-cmh" secondAttribute="centerY" id="DSR-yI-sZT"/>
-                            <constraint firstItem="Xw0-nU-LvI" firstAttribute="leading" secondItem="IM1-tI-cmh" secondAttribute="trailing" constant="62" id="PcB-RV-nr9"/>
+                            <constraint firstItem="Xw0-nU-LvI" firstAttribute="centerY" secondItem="IM1-tI-cmh" secondAttribute="centerY" constant="-1" id="DSR-yI-sZT"/>
+                            <constraint firstItem="Xw0-nU-LvI" firstAttribute="leading" secondItem="IM1-tI-cmh" secondAttribute="trailing" constant="76" id="PcB-RV-nr9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bk0-7n-TID" secondAttribute="trailing" constant="62" id="Sam-9q-c4D"/>
                             <constraint firstItem="bk0-7n-TID" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="Szj-UZ-9D2"/>
                             <constraint firstItem="bk0-7n-TID" firstAttribute="top" secondItem="Kka-v5-san" secondAttribute="bottom" constant="114" id="gG4-1P-VPu"/>
