@@ -10,45 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    // MARK: Outlets
     @IBOutlet weak var counterLabel: UILabel!
     
     @IBOutlet weak var tapOrHoldLabel: UILabel!
 
+    // MARK: Properties
     var counter: Int = 0
     
+    
+    // MARK: Init
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tap))
         let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
-        
-        addResetButton()
 
         tapOrHoldLabel.addGestureRecognizer(tapGesture)
         tapOrHoldLabel.addGestureRecognizer(longGesture)
         
         counterLabel.text = String(counter)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    func addResetButton() {
-        self.navigationItem.hidesBackButton = true
-        
-        let resetButton = UIBarButtonItem(
-            title: "Reset",
-            style: UIBarButtonItemStyle.Plain,
-            target: self,
-            action: #selector(resetButtonTapped))
-        
-        self.navigationItem.leftBarButtonItem = resetButton
-    }
-    
-    func resetButtonTapped() {
+    // MARK: Actions
+    @IBAction func resetBarButtonTapped(sender: UIButton) {
         counter = 0
         counterLabel.text = String(counter)
     }
