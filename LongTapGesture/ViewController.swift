@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tap))
-        let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(increaseCounter))
+        let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(increaseCounter))
 
         tapOrHoldLabel.addGestureRecognizer(tapGesture)
         tapOrHoldLabel.addGestureRecognizer(longGesture)
@@ -40,14 +40,6 @@ class ViewController: UIViewController {
     @IBAction func resetBarButtonTapped(sender: UIButton) {
         counter = 0
         counterLabel.text = String(counter)
-    }
-    
-    func tap(sender: UITapGestureRecognizer) {
-        increaseCounter()
-    }
-    
-    func longPress(sender: UILongPressGestureRecognizer) {
-        increaseCounter()
     }
     
     func increaseCounter() {
